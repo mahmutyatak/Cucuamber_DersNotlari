@@ -15,6 +15,7 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 import java.util.function.Function;
 public class ReusableMethods {
     public static String getScreenshot(String name) throws IOException {
@@ -130,5 +131,14 @@ public class ReusableMethods {
             }
         });
         return element;
+    }
+    public static void switchToWindowHandle(Set<String> handles) {
+        String ikinciSayfaHandle = "";
+        for (String each : handles) {
+            if (!each.equals(ikinciSayfaHandle)) {
+                ikinciSayfaHandle = each;
+            }
+        }
+        Driver.getdriever().switchTo().window(ikinciSayfaHandle);
     }
 }
