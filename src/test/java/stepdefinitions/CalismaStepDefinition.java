@@ -14,11 +14,11 @@ public class CalismaStepDefinition {
     }
     @Then("kullanici kutusuna {string} yazar")
     public void kullanici_kutusuna_yazar(String emailKutusu) {
-        qdPage.emailKutusu.sendKeys(ConfigReader.getProperty(emailKutusu));
+        qdPage.emailKutusu.sendKeys(emailKutusu);
     }
     @Then("password kutusuna {string} yazar")
     public void password_kutusuna_yazar(String password) {
-     qdPage.passwordKutusu.sendKeys(ConfigReader.getProperty(password));
+     qdPage.passwordKutusu.sendKeys(password);
     }
     @Then("login butonuna basar")
     public void login_butonuna_basar() {
@@ -37,5 +37,15 @@ public class CalismaStepDefinition {
     @And("giris yapilamadigini test eder")
     public void girisYapilamadiginiTestEder() {
         Assert.assertTrue(qdPage.loginButonu.isDisplayed());
+    }
+
+    @And("kullanici kutusuna config reader dan {string} yazar")
+    public void kullaniciKutusunaConfigReaderDanYazar(String username) {
+        qdPage.emailKutusu.sendKeys(ConfigReader.getProperty(username));
+    }
+
+    @And("password kutusuna config reader dan {string} yazar")
+    public void passwordKutusunaConfigReaderDanYazar(String password) {
+        qdPage.passwordKutusu.sendKeys(ConfigReader.getProperty(password));
     }
 }
