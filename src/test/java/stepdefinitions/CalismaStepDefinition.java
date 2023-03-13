@@ -36,6 +36,7 @@ public class CalismaStepDefinition {
 
     @And("giris yapilamadigini test eder")
     public void girisYapilamadiginiTestEder() {
+
         Assert.assertTrue(qdPage.loginButonu.isDisplayed());
     }
 
