@@ -1,5 +1,5 @@
 Feature: US1007 Scenerio Outline ile coklu negatif login test
-  @negatif
+
   Scenario Outline: TC11 kullanici verilen listedeki kullanici isimleri ile giris yapamamli
     Given kullanici "qdUrl" anasayfaya gider
     Then ilk sayfa login linkine click yapar

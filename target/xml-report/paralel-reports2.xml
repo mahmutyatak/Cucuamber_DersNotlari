@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="39.521" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="US1008 gecerli kullanici adi ve sifre ile sisteme giris" name="TC12 Gecerli username ve password ile basarili giris yapilabilmeli" time="18.516">
+<system-out><![CDATA[
+Given kullanici "qdUrl" anasayfaya gider....................................passed
+Then ilk sayfa login linkine click yapar....................................passed
+And kullanici kutusuna config reader dan "qdGecerliUsername" yazar..........passed
+And password kutusuna config reader dan "qdGecerliPassword" yazar...........passed
+And cokkie kabul eder.......................................................passed
+And 3 saniye bekler.........................................................passed
+And login butonuna basar....................................................passed
+Then basarili giris yapildigini test eder...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1009 Herokuapp implictly wait" name="TC13 implicitly wait gorevleri yapabilmeli" time="13.218">
+<system-out><![CDATA[
+Given kullanici "herokuUrl" anasayfaya gider................................passed
+Then Add Element butonuna basar.............................................passed
+And Delete butonu gorunur oluncaya kadar bekler.............................passed
+And Delete butonunun gorunur oldugunu test eder.............................passed
+And Delete butonuna basarak butonu siler....................................passed
+And Delete butonunun gorunmedigini test eder................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1010 WebUnivercity Testi" name="TC14 Webunivercity sayfasinda istenen gorevleri yapar." time="7.285">
+<system-out><![CDATA[
+Given kullanici "webunivercityUrl" anasayfaya gider.........................passed
+Then Login Portal gorununceye kadar asagi iner..............................passed
+Then Login Portal butonuna tiklar...........................................passed
+Then acilan ikinci windowa gecer............................................passed
+And Username kutusuna deger yazdirir........................................passed
+And Password kutusuna deger yazdirir........................................passed
+Then webunivercity login butonuna basar.....................................passed
+And Popup'ta cikan yazinin validation failed oldugunu test edin.............passed
+And Ok diyerek Popup'i kapatin..............................................passed
+Then Ilk sayfaya geri donun.................................................passed
+And Ilk sayfaya donuldugunu test edin.......................................passed
+And tum sayfalari kapatir...................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

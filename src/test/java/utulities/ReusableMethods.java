@@ -141,7 +141,7 @@ public class ReusableMethods {
         }
         Driver.getdriever().switchTo().window(ikinciSayfaHandle);
     }
-    public void scrollToElement(WebElement element){
+    public static void scrollToElement(WebElement element){
 
         JavascriptExecutor jse= (JavascriptExecutor) Driver.getdriever();
         jse.executeScript("arguments[0].scrollIntoView();",element);

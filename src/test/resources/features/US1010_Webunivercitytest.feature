@@ -1,5 +1,6 @@
+
 Feature: US1010 WebUnivercity Testi
-  @hero
+  @pr2
   Scenario: TC14 Webunivercity sayfasinda istenen gorevleri yapar.
 
     Given kullanici "webunivercityUrl" anasayfaya gider

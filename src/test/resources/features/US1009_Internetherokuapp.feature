@@ -1,5 +1,6 @@
+
 Feature:US1009 Herokuapp implictly wait
-  @rapor
+  @pr2
   Scenario: TC13 implicitly wait gorevleri yapabilmeli
     Given kullanici "herokuUrl" anasayfaya gider
     Then Add Element butonuna basar
