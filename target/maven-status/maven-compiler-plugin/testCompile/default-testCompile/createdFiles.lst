@@ -2,13 +2,13 @@ pages\WebUnivercityPage.class
 stepdefinitions\WebUnivercityStepdefinition.class
 utulities\ReusableMethods$2.class
 pages\DemoqaPage.class
+pages\GooglePage.class
 utulities\ConfigReader.class
 utulities\ReusableMethods.class
 stepdefinitions\HerokupStepdefiniton.class
-runners\ParalelRunner3.class
+runners\ParalelbRunner3.class
 pages\AmazonPage.class
 stepdefinitions\DemoqaStepdefinition.class
-stepdefinitions\Hooks.class
 stepdefinitions\AmazonStepdefinitions.class
 runners\Runner.class
 pages\QdPage.class
@@ -16,5 +16,7 @@ runners\ParalelRunner1.class
 pages\HerokupPage.class
 runners\ParalelRunner2.class
 utulities\ReusableMethods$1.class
+stepdefinitions\GoogleStepDefinition.class
 utulities\Driver.class
 stepdefinitions\CalismaStepDefinition.class
+hooks\Hooks.class

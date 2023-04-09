@@ -15,5 +15,5 @@ import org.junit.runner.RunWith;
 
         dryRun = false
 )
-public class ParalelRunner3 {
+public class ParalelbRunner3 {
 }

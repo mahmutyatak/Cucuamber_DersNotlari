@@ -1,5 +1,5 @@
 Feature: 2003 Alert calisma
-  @abc
+  @abc1
   Scenario: TC102 Calisma
     Given kullanici "demoqaUrl" anasayfaya gider
     Then Alerts sekmesine tiklar

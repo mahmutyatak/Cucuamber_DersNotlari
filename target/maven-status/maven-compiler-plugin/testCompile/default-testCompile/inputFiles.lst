@@ -2,8 +2,8 @@ C:\Users\Yasemin\Desktop\com.team108_cucamber\src\test\java\pages\DemoqaPage.jav
 C:\Users\Yasemin\Desktop\com.team108_cucamber\src\test\java\utulities\ConfigReader.java
 C:\Users\Yasemin\Desktop\com.team108_cucamber\src\test\java\stepdefinitions\HerokupStepdefiniton.java
 C:\Users\Yasemin\Desktop\com.team108_cucamber\src\test\java\pages\HerokupPage.java
+C:\Users\Yasemin\Desktop\com.team108_cucamber\src\test\java\hooks\Hooks.java
 C:\Users\Yasemin\Desktop\com.team108_cucamber\src\test\java\runners\ParalelRunner1.java
-C:\Users\Yasemin\Desktop\com.team108_cucamber\src\test\java\runners\ParalelRunner3.java
 C:\Users\Yasemin\Desktop\com.team108_cucamber\src\test\java\utulities\Driver.java
 C:\Users\Yasemin\Desktop\com.team108_cucamber\src\test\java\stepdefinitions\DemoqaStepdefinition.java
 C:\Users\Yasemin\Desktop\com.team108_cucamber\src\test\java\stepdefinitions\WebUnivercityStepdefinition.java
@@ -12,7 +12,9 @@ C:\Users\Yasemin\Desktop\com.team108_cucamber\src\test\java\runners\Runner.java
 C:\Users\Yasemin\Desktop\com.team108_cucamber\src\test\java\stepdefinitions\AmazonStepdefinitions.java
 C:\Users\Yasemin\Desktop\com.team108_cucamber\src\test\java\stepdefinitions\CalismaStepDefinition.java
 C:\Users\Yasemin\Desktop\com.team108_cucamber\src\test\java\pages\QdPage.java
+C:\Users\Yasemin\Desktop\com.team108_cucamber\src\test\java\stepdefinitions\GoogleStepDefinition.java
 C:\Users\Yasemin\Desktop\com.team108_cucamber\src\test\java\pages\WebUnivercityPage.java
 C:\Users\Yasemin\Desktop\com.team108_cucamber\src\test\java\runners\ParalelRunner2.java
-C:\Users\Yasemin\Desktop\com.team108_cucamber\src\test\java\stepdefinitions\Hooks.java
+C:\Users\Yasemin\Desktop\com.team108_cucamber\src\test\java\runners\ParalelbRunner3.java
 C:\Users\Yasemin\Desktop\com.team108_cucamber\src\test\java\pages\AmazonPage.java
+C:\Users\Yasemin\Desktop\com.team108_cucamber\src\test\java\pages\GooglePage.java

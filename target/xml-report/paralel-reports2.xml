@@ -1,41 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="39.521" tests="3" skipped="0" failures="0" errors="0">
-<testcase classname="US1008 gecerli kullanici adi ve sifre ile sisteme giris" name="TC12 Gecerli username ve password ile basarili giris yapilabilmeli" time="18.516">
+<testsuite name="Cucumber" time="28.6" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="US2001 Kullanici Configuration Dosyasindaki Bilgilerle Login olabilmeli" name="TC101 Gecerli kullanici adi ve sifre ile pozitif login testi" time="28.27">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()='Instructor']&quot;}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d665734662da666b184406a912ec3634, findElement {using=xpath, value=//a[text()='Instructor']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Yasemin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51469}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51469/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d665734662da666b184406a912ec3634">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Instructor']"}
+  (Session info: chrome=111.0.5563.148)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d665734662da666b184406a912ec3634, findElement {using=xpath, value=//a[text()='Instructor']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Yasemin\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51469}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51469/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d665734662da666b184406a912ec3634
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy23.isEnabled(Unknown Source)
+	at stepdefinitions.CalismaStepDefinition.basarili_giris_yapildigini_test_eder(CalismaStepDefinition.java:29)
+	at ✽.basarili giris yapildigini test eder(file:///C:/Users/Yasemin/Desktop/com.team108_cucamber/src/test/resources/features/calisma/US2001_Calisma.feature:11)
+]]>
+</failure>
 <system-out><![CDATA[
 Given kullanici "qdUrl" anasayfaya gider....................................passed
 Then ilk sayfa login linkine click yapar....................................passed
-And kullanici kutusuna config reader dan "qdGecerliUsername" yazar..........passed
-And password kutusuna config reader dan "qdGecerliPassword" yazar...........passed
+And kullanici kutusuna "qdGecerliUsername" yazar............................passed
+And password kutusuna "qdGecerliPassword" yazar.............................passed
 And cokkie kabul eder.......................................................passed
-And 3 saniye bekler.........................................................passed
-And login butonuna basar....................................................passed
-Then basarili giris yapildigini test eder...................................passed
-]]></system-out>
-</testcase>
-<testcase classname="US1009 Herokuapp implictly wait" name="TC13 implicitly wait gorevleri yapabilmeli" time="13.218">
-<system-out><![CDATA[
-Given kullanici "herokuUrl" anasayfaya gider................................passed
-Then Add Element butonuna basar.............................................passed
-And Delete butonu gorunur oluncaya kadar bekler.............................passed
-And Delete butonunun gorunur oldugunu test eder.............................passed
-And Delete butonuna basarak butonu siler....................................passed
-And Delete butonunun gorunmedigini test eder................................passed
-]]></system-out>
-</testcase>
-<testcase classname="US1010 WebUnivercity Testi" name="TC14 Webunivercity sayfasinda istenen gorevleri yapar." time="7.285">
-<system-out><![CDATA[
-Given kullanici "webunivercityUrl" anasayfaya gider.........................passed
-Then Login Portal gorununceye kadar asagi iner..............................passed
-Then Login Portal butonuna tiklar...........................................passed
-Then acilan ikinci windowa gecer............................................passed
-And Username kutusuna deger yazdirir........................................passed
-And Password kutusuna deger yazdirir........................................passed
-Then webunivercity login butonuna basar.....................................passed
-And Popup'ta cikan yazinin validation failed oldugunu test edin.............passed
-And Ok diyerek Popup'i kapatin..............................................passed
-Then Ilk sayfaya geri donun.................................................passed
-And Ilk sayfaya donuldugunu test edin.......................................passed
-And tum sayfalari kapatir...................................................passed
+And 3 saniye bekler.........................................................skipped
+Then login butonuna basar...................................................passed
+And basarili giris yapildigini test eder....................................failed
+Then sayfayi kapatir........................................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>

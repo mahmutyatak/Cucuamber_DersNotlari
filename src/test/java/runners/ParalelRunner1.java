@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
                 "json:target/json-reports/paralel-reports1.json",
                 "junit:target/xml-report/paralel-reports1.xml"},
         features = "src/test/resources/features",
-        glue ="stepdefinitions",
-        tags = "@pr2",
+        glue ={"stepdefinitions","hooks"},
+        tags = "@abc1",
 
         dryRun = false
 )
